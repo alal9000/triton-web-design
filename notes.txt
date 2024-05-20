@@ -1,0 +1,39 @@
+SCREEN AND CONTAINER SIZES FOR DEFAULT CONTAINER CLASS:
+
+xs - screens < 576px: No fixed container, spans full width of viewport
+sm - screens >= 576px: Max-width of 540px.
+md - screens >=768px: Max-width of 720px.
+lg - screens >= 992px: Max-width of 960px.
+xl - screens >= 1200px: Max-width of 1140px
+xxl - screens >= 1400px: Max-width of 1320px
+
+ROWS:
+
+class="row" : group related columns and is a flex container meaning its children will have flex properties applied
+class="row justify-content-center" : centers the content within the row
+<div class="row row-cols-sm-2 row-cols-md-4"> : define the columns used on break-points within the row class
+
+COLUMN SIZING:
+
+col-sm-3: this column is defined to span 3/12 total columns based on the viewport width 'sm' above
+col-sm-auto: uses the room that it needs to. For variable width content within a column
+
+CLASSES:
+
+mt-x
+me-x
+ms-x
+mb-x
+
+w-x
+mw-x
+
+h-x
+mh-x
+
+
+===================================================================================================================================
+
+-ms: margin start
+-me: margin end
+

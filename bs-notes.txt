@@ -1,0 +1,63 @@
+SCREEN AND CONTAINER SIZES FOR DEFAULT CONTAINER CLASS:
+
+xs - screens < 576px: No fixed container, spans full width of viewport
+sm - screens >= 576px: Max-width of 540px.
+md - screens >=768px: Max-width of 720px.
+lg - screens >= 992px: Max-width of 960px.
+xl - screens >= 1200px: Max-width of 1140px
+xxl - screens >= 1400px: Max-width of 1320px
+
+ROWS:
+
+class="row" : group related columns and is a flex container meaning its children will have flex properties applied
+class="row justify-content-center" : centers the content within the row
+<div class="row row-cols-sm-2 row-cols-md-4"> : define the columns used on break-points within the row class
+
+COLUMN SIZING:
+
+col-sm-3: this column is defined to span 3/12 total columns based on the viewport width 'sm' above
+col-sm-auto: uses the room that it needs to. For variable width content within a column
+
+CLASSES:
+
+mt-x
+me-x
+ms-x
+mb-x
+
+w-x
+mw-x
+
+h-x
+mh-x
+
+
+===================================================================================================================================
+
+-ms: margin start ie: margin left
+-me: margin end ie: margin right
+-my: margin top and bottom
+-mt: margin top
+-mb: margin bottom
+-m-x margin all around (note the x only goes up to 5)
+
+-note all of the above also applies to padding
+
+-we can size with w-x and h-x and the number pass will be the size relative to the elements container ie: 800px container and image will be 400px if we we do w-50
+
+-to use flexbox we can do <div class="d-flex">
+-in css if we dont add any styles to images, they can potentially break out of their container, if we want our image to be bound into the container we can use: <img class="img-fluid" src="#" alt="">
+
+-flex positioning: when the flex-direction is row (default) - justify content will align items along the main axis (horizontal or x) and align-items will align items along the cross axis (vertical or y). When the flex-direction is column - justify content will align items along the main axis (vertical or y) and align-items will align items along the cross axis (horizontal or x)
+
+-padding creates space around the content of an element
+
+-@media(min-width: 768px) {} -  means as long as its 768px or over then this rule should be in effect
+
+-@media(max-width: 768px) {} - as long as its under 768px then this rule should be in effect
+
+-the box sizing properties in css controls how the total width and height of an element is calcualted. Default is content-box where the size is calculated based only on the content of the element, excluding paddings and borders. border-box includes padding and borders in this calculation.
+
+-block level elements take up the full width of their containers and start on a new line
+
+-the total size of an element in html is calculated as the sum of its content, padding, border and margins
